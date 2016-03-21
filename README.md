@@ -3,7 +3,7 @@
 
 ssh into your raspiberry
 ```
-git clone https://github.com/derekhe/waveshare-7inch-touchscreen-driver
+git clone https://github.com/Akex2/driver-waveshare-with-backlight-pwm
 cd driver-waveshare-with-backlight-pwm
 chmod +x install.sh
 sudo apt-get update
