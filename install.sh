@@ -1,6 +1,14 @@
 #!/bin/bash
 
 chmod +x *.sh *.py
+sudo apt-get update
+sudo apt-get install git-core
+git clone git://git.drogon.net/wiringPi
+cd wiringPi
+git pull origin
+./build
+sudo apt-get install python-dev python-pip
+sudo pip install wiringpi2
 sudo patch -b /boot/config.txt 7inch.patch
 sudo apt-get install -y python3-pip libudev-dev
 sudo pip-3.2 install python-uinput pyudev
