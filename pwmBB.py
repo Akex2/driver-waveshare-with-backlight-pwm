@@ -34,21 +34,10 @@ try:
 		#print(i)
 		if odate > limit :
 			#print("sup")
-			while i <= 50 :
-				i =(i + 2)
-				#wiringpi.pwmWrite(18,i)
-        PWM.set_duty_cycle("P9_15", i)
-				sleep(0.1)
-				#print(i)
+			GPIO.output("P9_15", GPIO.HIGH)
 		else:
 			#print("inf")
-			while i > 0:
-				i = (i - 1)
-				#wiringpi.pwmWrite(18,i)
-        PWM.set_duty_cycle("P9_15", i)
-				sleep(0.1)
-				#print(i)
-		#print("ok")
+			GPIO.output("P9_15", GPIO.LOW)
 		sleep(0.5)
 
 
