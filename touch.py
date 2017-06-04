@@ -17,8 +17,8 @@ def read_and_emulate_mouse(deviceFound):
         device = uinput.Device([
             uinput.BTN_LEFT,
             uinput.BTN_RIGHT,
-            uinput.ABS_X,
-            uinput.ABS_Y,
+            uinput.ABS_X + (0, 1024, 0, 0), #or 800
+            uinput.ABS_Y + (0, 600, 0, 0), #ok 480
         ])
 
         clicked = False
