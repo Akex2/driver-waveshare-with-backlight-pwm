@@ -2,7 +2,7 @@
 # script by Alex Schointss
 
 #import wiringpi2 as wiringpi
-import Adafruit_BBIO.PWM as PWM
+import Adafruit_BBIO.GPIO as GPIO
 from time import sleep       # allows us a time delay
 from stat import *
 import os
@@ -10,8 +10,8 @@ import time
 #wiringpi.wiringPiSetupGpio()
 #wiringpi.pinMode(18, 2)      # sets GPIO 24 to output
 #wiringpi.pwmWrite(18, 0) # sets port 24 to 0 (0V, off)
-PWM.start("P9_15", 100)
-
+GPIO.setup("P9_15", GPIO.OUT)
+GPIO.output("P9_15", GPIO.HIGH)
 #wiringpi.pinMode(25, 0)      # sets GPIO 25 to input
 i = 0
 #oinfo = os.stat('toto.txt')
