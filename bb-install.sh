@@ -3,8 +3,9 @@
 chmod +x *.sh *.py
 sudo apt-get update
 sudo apt-get install python-dev python-pip
+sudo pip install wheel
 #sudo pip install wiringpi2
-sudo pip-3.2 install python-uinput pyudev
+#sudo pip-3.2 install python-uinput pyudev
 sudo apt-get install git-core
 #git clone git://git.drogon.net/wiringPi
 #cd wiringPi
@@ -12,9 +13,9 @@ sudo apt-get install git-core
 #./build
 #sudo patch -b /boot/config.txt 7inch.patch
 sudo apt-get install -y python3-pip libudev-dev
-sudo pip-3.2 install python-uinput pyudev
+#sudo pip-3.2 install python-uinput pyudev
 #if pip-3.2 can't be found, please use pip3
-#sudo pip3 install python-uinput pyudev
+sudo pip3 install python-uinput pyudev
 cd ..
 
 sudo cp touch.py /usr/bin/
