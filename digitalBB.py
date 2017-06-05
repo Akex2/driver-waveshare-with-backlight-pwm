@@ -11,7 +11,7 @@ import time
 #wiringpi.pinMode(18, 2)      # sets GPIO 24 to output
 #wiringpi.pwmWrite(18, 0) # sets port 24 to 0 (0V, off)
 GPIO.setup("P9_15", GPIO.OUT)
-GPIO.output("P9_15", GPIO.HIGH)
+GPIO.output("P9_15", GPIO.LOW)
 #wiringpi.pinMode(25, 0)      # sets GPIO 25 to input
 i = 0
 #oinfo = os.stat('toto.txt')
