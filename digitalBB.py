@@ -10,8 +10,8 @@ import time
 #wiringpi.wiringPiSetupGpio()
 #wiringpi.pinMode(18, 2)      # sets GPIO 24 to output
 #wiringpi.pwmWrite(18, 0) # sets port 24 to 0 (0V, off)
-GPIO.setup("P9_15", GPIO.OUT)
-GPIO.output("P9_15", GPIO.LOW)
+GPIO.setup("P9_17", GPIO.OUT)
+GPIO.output("P9_17", GPIO.LOW)
 #wiringpi.pinMode(25, 0)      # sets GPIO 25 to input
 i = 0
 #oinfo = os.stat('toto.txt')
@@ -34,10 +34,10 @@ try:
 		#print(i)
 		if odate > limit :
 			#print("sup")
-			GPIO.output("P9_15", GPIO.HIGH)
+			GPIO.output("P9_17", GPIO.HIGH)
 		else:
 			#print("inf")
-			GPIO.output("P9_15", GPIO.LOW)
+			GPIO.output("P9_17", GPIO.LOW)
 		sleep(0.5)
 
 
