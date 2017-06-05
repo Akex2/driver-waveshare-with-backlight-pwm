@@ -42,5 +42,6 @@ try:
 
 
 finally:  # when you CTRL+C exit, we clean up
-	wiringpi.digitalWrite(4, 0) # sets port 24 to 0 (0V, off)
-	wiringpi.pinMode(4, 0)      # sets GPIO 24 back to input Mode# GPIO 25 is already an input, so no need to change anything
+	GPIO.output("P9_15", GPIO.HIGH)
+	#wiringpi.digitalWrite(4, 0) # sets port 24 to 0 (0V, off)
+	#wiringpi.pinMode(4, 0)      # sets GPIO 24 back to input Mode# GPIO 25 is already an input, so no need to change anything
