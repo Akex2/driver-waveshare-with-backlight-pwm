@@ -34,10 +34,10 @@ try:
 		#print(i)
 		if odate > limit :
 			#print("sup")
-			GPIO.output("P9_17", GPIO.LOW)
+			GPIO.output("P9_17", GPIO.HIGH)
 		else:
 			#print("inf")
-			GPIO.output("P9_17", GPIO.HIGH)
+			GPIO.output("P9_17", GPIO.LOW)
 		sleep(0.5)
 
 
