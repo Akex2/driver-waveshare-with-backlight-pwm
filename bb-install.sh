@@ -2,8 +2,10 @@
 
 chmod +x *.sh *.py
 sudo apt-get update
-sudo apt-get install python-dev python-pip
+sudo apt-get update
+sudo apt-get install build-essential python-dev python-setuptools python-pip python-smbus -y
 sudo pip install wheel
+sudo pip install Adafruit_BBIO
 #sudo pip install wiringpi2
 #sudo pip-3.2 install python-uinput pyudev
 sudo apt-get install git-core
